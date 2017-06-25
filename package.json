@@ -60,6 +60,7 @@
     "compile": "npm-run-all --parallel compile:cjs compile:es",
     "prepublish": "npm run compile",
     "lint": "eslint src",
-    "example": "webpack-dev-server --config example/webpack.config.js"
+    "example": "webpack-dev-server --config example/webpack.config.js",
+    "build-lib": "NODE_ENV=production && webpack --config build-lib.js"
   }
 }
